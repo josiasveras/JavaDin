@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import br.com.generation.dominio.Pessoa;
+import br.com.generation.dominio.Utilitarios;
 
 public class Programa {
 
@@ -17,8 +18,8 @@ public class Programa {
 		System.out.println("Digite a sua renda total: ");
 		double renda = sc.nextDouble();
 		
-		System.out.print("Informe o total de seus gastos fixos mensais: ");
-		System.out.print("Considere: água, luz, telefone/internet, aluguel/financiamento, alimentação");
+		System.out.println("Informe o total de seus gastos fixos mensais: ");
+		System.out.println("Considere: água, luz, telefone/internet, aluguel/financiamento, alimentação");
 		double gastosFixos = sc.nextDouble();
 		
 		//Instanciando a classe Pessoa e criando o objeto
@@ -36,7 +37,27 @@ public class Programa {
 		//System.out.println("Renda: " + porcenGastos);
 		
 		if (porcenGastos <= 0.50) {
-			System.out.println("Pretende poupar");
+			System.out.println("Qual valor mensal você pretende poupar: ");
+			double poupancaMensal = sc.nextDouble();
+			
+			/*System.out.println("Quanto meses de reserva você quer: ");
+			System.out.println("Considere: 6, 12 ou 18 meses: ");
+			int reservaTotal = sc.nextInt();*/
+			
+			int TotalMesesReserva;
+			
+			do {
+				System.out.println("Considere: 6, 12 ou 18 meses: ");
+				System.out.println("Quanto meses de reserva você quer: ");
+				TotalMesesReserva = sc.nextInt();
+				
+			} while (TotalMesesReserva != 6 && TotalMesesReserva != 12 && TotalMesesReserva != 18);
+			
+			Utilitarios conta = new Utilitarios();
+
+			System.out.println("Sua reserva total necessária será: " + conta.calculaReservaTotal(gastosFixos, TotalMesesReserva));
+			System.out.println("Tempo necessário para atingir a reserva desejada : " + conta.calculaTempoReservaTotal(poupancaMensal) + " meses");
+			
 		} else {
 			if (porcenGastos <= 0.60) {
 				if (renda <= (salarioMinimo * 1.5)) {
