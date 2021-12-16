@@ -56,7 +56,7 @@ public class Programa {
 			Utilitarios conta = new Utilitarios();
 
 			System.out.println("Sua reserva total necessária será: " + conta.calculaReservaTotal(gastosFixos, TotalMesesReserva));
-			System.out.println("Tempo necessário para atingir a reserva desejada : " + conta.calculaTempoReservaTotal(poupancaMensal) + " meses");
+			System.out.println("Tempo necessário para atingir a reserva desejada : " + conta.calculaTempoReservaTotal(poupancaMensal));
 			
 		} else {
 			if (porcenGastos <= 0.60) {

@@ -9,11 +9,11 @@ public class Utilitarios {
 		return reservaTotal;
 	}
 	
-	/*public double calculaTempoReservaTotal(double poupancaMensal) {
+	public double calculaTempoReservaTotal(double poupancaMensal) {
 		 double tempoReservaTotal = reservaTotal / poupancaMensal;
 		 Math.round(tempoReservaTotal * 365);
 		 return tempoReservaTotal;
-	}*/
+	}
 	
 	/*public int calculaTempo() {
 		/PROCESSAMENTO
