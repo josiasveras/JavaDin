@@ -15,10 +15,12 @@ public class Programa {
 		int idade = 0;
 		double renda = 0;
 		double gastosFixos = 0;
+		double poupancaMensal = 0;
 		
 		boolean erroInt = true;
 		boolean erroRenda = true;
 		boolean errogastosFixos = true;
+		boolean erroPoupancaMensal = true;
 		
 		// Instanciando as classes UI e Utilitarios
 		UI ui = new UI();
@@ -98,8 +100,21 @@ public class Programa {
 		// Verificando se o usuário está apto a começar a poupar ou precisa organizar sua vida financeira antes
 		if (porcenGastos <= 0.50) {
 			
-			System.out.print("Qual valor mensal você pretende poupar: ");
-			double poupancaMensal = sc.nextDouble();
+			/*System.out.print("Qual valor mensal você pretende poupar: ");
+			poupancaMensal = sc.nextDouble();*/
+			
+			// Erro poupança mensal
+			do{
+				try{
+					System.out.print("Qual valor mensal você pretende poupar: ");
+					poupancaMensal = sc.nextDouble();
+					erroPoupancaMensal = false;
+
+				}catch (InputMismatchException erro4) {
+					System.err.println("Informe apenas números!");
+					sc.nextLine(); //descarta a entrada errada do usuário
+				}
+			}while(erroPoupancaMensal);
 			
 			int TotalMesesReserva;
 			
