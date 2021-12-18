@@ -56,6 +56,7 @@ public class Programa {
 			System.out.println("Idade: " + pessoa.getIdade() + " anos");
 
 			System.out.println("Sua reserva total necessária será: R$ " + conta.calculaReservaTotal(gastosFixos, TotalMesesReserva));
+			System.out.println("Investindo R$ " + poupancaMensal + " por mês no Tesouro SELIC: ");
 			
 			conta.calculaTempoReservaTotal(poupancaMensal);
 			conta.calculaTempo();

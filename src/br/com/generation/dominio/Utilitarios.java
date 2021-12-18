@@ -11,12 +11,21 @@ public class Utilitarios {
 	}
 	
 	public double calculaTempoReservaTotal(double poupancaMensal) {
-		 tempoReservaTotal = reservaTotal / poupancaMensal;
-		 return tempoReservaTotal;
+		//Taxa de juros SELIC
+		double taxaDeJuros = 0.0915;
+		
+		double tempoReservaTotalProvisorio = reservaTotal / poupancaMensal;
+		 
+		double jurosDoPeriodo = poupancaMensal * taxaDeJuros * tempoReservaTotalProvisorio;
+		
+		double novaReservaTotal = reservaTotal - jurosDoPeriodo;
+		
+		tempoReservaTotal = novaReservaTotal / poupancaMensal;
+		 
+		return tempoReservaTotal;
 	}
 	
 	public void calculaTempo() {
-		//double tempoReservaTotal = 30.44444444484;
 			
 			double ano = ((tempoReservaTotal * 30) / 360);
 			double anocerto = (int) ano ; // CAST
