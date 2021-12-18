@@ -6,9 +6,15 @@ public class UI {
 		
 	}
 	
-	public void dicaRendaMaiorCincoSalMin() {
+	public void dicaRendaMaiorCincoSalMinEMaior60PC() {
 		System.out.println(
-				"Baseado na sua renda acreditamos que a melhor forma\r\n"
+				"No momento seus gastos fixos mensais ultrapassam \r\n"
+				+ "50% de sua renda, elaborar uma reserva \r\n"
+				+ "financeira/emergência agora pode prejudicar sua \r\n"
+				+ "qualidade de vida, mas não se preocupe temos dicas \r\n"
+				+ "para que você possa atingir esta meta:\r\n"
+				+ "\r\n"
+				+ "Baseado na sua renda acreditamos que a melhor forma\r\n"
 				+ "de te ajudar a ter aquele dinheirinho no bolso é estabilizar\r\n"
 				+ "sua renda de forma saudável.\r\n"
 				+ "\r\n"
@@ -30,9 +36,15 @@ public class UI {
 		);
 	}
 	
-	public void dicaRendaMenorCincoSalMin() {
+	public void dicaRendaMenorCincoSalMinEMaior60PC() {
 		System.out.println(
-				"Baseado na sua renda acreditamos que o melhor jeito de te \r\n"
+				"No momento seus gastos fixos mensais ultrapassam \r\n"
+				+ "50% de sua renda, elaborar uma reserva \r\n"
+				+ "financeira/emergência agora pode prejudicar sua \r\n"
+				+ "qualidade de vida, mas não se preocupe temos dicas \r\n"
+				+ "para que você possa atingir esta meta:\r\n"
+				+ "\r\n"
+				+ "Baseado na sua renda acreditamos que o melhor jeito de te \r\n"
 				+ "ajudar a ter aquele dinheirinho no fim do mês é conseguir \r\n"
 				+ "complementar sua renda.\r\n"
 				+ "\r\n"
@@ -46,7 +58,66 @@ public class UI {
 				+ "por mais simples que isso seja quando jogamos no papel,\r\n"
 				+ "tudo o que não foi usado nesse mês, é dinheiro suficiente para sair \r\n"
 				+ "e ver um filme ou fazer uma social com os amigos em casa.\r\n"
-				+ ""
+		);
+	}
+	
+	public void dicaMenorUmSalMinEMenor60PC() {
+		System.out.println(
+				"No momento seus gastos fixos mensais ultrapassam \r\n"
+				+ "50% de sua renda, elaborar uma reserva \r\n"
+				+ "financeira/emergência agora pode prejudicar sua \r\n"
+				+ "qualidade de vida, mas não se preocupe temos dicas \r\n"
+				+ "para que você possa atingir esta meta:\r\n"
+				+ "\r\n"
+				+ "Você pode criar metas de curto e longo prazo;\r\n"
+				+ "Arredondar despesas para cima e renda para baixo;\r\n"
+				+ "\r\n"
+				+ "Você pode completar sua renda participando de algum \r\n"
+				+ "programa social. Para isso basta entrar em contato com \r\n"
+				+ "o CRAS ou subprefeitura da sua região e seguir as orientações.\r\n"
+		);
+		
+	}
+	
+	public void dicaMenorUmSalMinEMaior60PC() {
+		System.out.println(
+				"No momento seus gastos fixos mensais ultrapassam \r\n"
+				+ "50% de sua renda, elaborar uma reserva \r\n"
+				+ "financeira/emergência agora pode prejudicar sua \r\n"
+				+ "qualidade de vida, mas não se preocupe temos dicas \r\n"
+				+ "para que você possa atingir esta meta:\r\n"
+				+ "\r\n"
+				+ "Você pode criar metas de curto e longo prazo;\r\n"
+				+ "Arredondar despesas para cima e renda para baixo;\r\n"
+				+ "\r\n"
+				+ "Você pode completar sua renda participando de algum \r\n"
+				+ "programa social. Para isso basta entrar em contato com \r\n"
+				+ "o CRAS ou subprefeitura da sua região e seguir as orientações.\r\n"
+		);
+		
+	}
+	
+	//poupar > 1.5 salario Mínimo e <= 0.60
+	public void dicaMaiorUmSalMinEMenor60PC() {
+		System.out.println(
+				"No momento seus gastos fixos mensais ultrapassam \r\n"
+				+ "50% de sua renda, elaborar uma reserva \r\n"
+				+ "financeira/emergência agora pode prejudicar sua \r\n"
+				+ "qualidade de vida, mas não se preocupe temos dicas \r\n"
+				+ "para que você possa atingir esta meta:\r\n"
+				+ "\r\n"
+				+ "Você sabia que pode poupar e diminuir seus gastos \r\n"
+				+ "de maneira fácil, adequada e simples? \r\n"
+				+ "Pois bem acompanhe nossos seguimentos JAVA DIN:\r\n"
+				+ "\r\n"
+				+ "• Equacione Suas Dívidas.\r\n"
+				+ "• Reveja o Essencial.\r\n"
+				+ "• Controle Seus Gastos.\r\n"
+				+ "• Defina Metas De Consumo. \r\n"
+				+ "• Encontre alternativas mais baratos. \r\n"
+				+ "• Guarde tudo que sobrar.\r\n"
+				+ "• Tente Diminuir os gastos de renda com. \r\n"
+				+ "água, luz, telefone etc.\r\n"
 		);
 	}
 }

@@ -70,7 +70,6 @@ public class Programa {
 			}catch (InputMismatchException erro2) {
 				System.err.println("Informe apenas números!");
 				sc.nextLine(); //descarta a entrada errada do usuário
-				//sc.nextDouble(); //descarta a entrada errada do usuário
 			}
 		}while(erroRenda);
 		
@@ -85,7 +84,6 @@ public class Programa {
 			}catch (InputMismatchException erro3) {
 				System.err.println("Informe apenas números!");
 				sc.nextLine(); //descarta a entrada errada do usuário
-				//sc.nextDouble(); //descarta a entrada errada do usuário
 			}
 		}while(errogastosFixos);
 		
@@ -129,11 +127,11 @@ public class Programa {
 				
 				if (renda <= (salarioMinimo * 1.5)) {
 					
-					System.out.println("Boas práticas para poupar <= 1.5 salario Mínimo");
+					ui.dicaMenorUmSalMinEMenor60PC();
 					
 				} else {
 					
-					System.out.println("Boas práticas para poupar > 1.5 salario Mínimo e <= 0.60");
+					ui.dicaMaiorUmSalMinEMenor60PC();
 					
 				}
 				
@@ -141,18 +139,17 @@ public class Programa {
 				
 				if (renda <= (salarioMinimo * 1.5)) {
 					
-					System.out.println("Boas práticas para poupar < 1.5 salario Mínimo");
+					ui.dicaMenorUmSalMinEMaior60PC();
 					
 				} else {
 					
 					if(renda > (salarioMinimo * 5)) {
 						
-						ui.dicaRendaMaiorCincoSalMin();
+						ui.dicaRendaMaiorCincoSalMinEMaior60PC();
 						
 					} else {
 						
-						//System.out.println("Boas práticas para poupar gastos > 60%. Renda Entre 1.5 Salário Min e 5 Salário Min");
-						ui.dicaRendaMenorCincoSalMin();
+						ui.dicaRendaMenorCincoSalMinEMaior60PC();
 						
 					}
 				}
