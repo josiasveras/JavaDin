@@ -27,6 +27,7 @@ public class Programa {
 		System.out.println("Considere: água, luz, telefone/internet, aluguel/financiamento, alimentação");
 		System.out.print("Informe o total de seus gastos fixos mensais: ");
 		double gastosFixos = sc.nextDouble();
+		System.out.println();
 		
 		// Instanciando a classe Pessoa
 		Pessoa pessoa = new Pessoa(nome, idade, renda, gastosFixos);
@@ -73,7 +74,17 @@ public class Programa {
 					System.out.println("Boas práticas para poupar < 1.5 salario Mínimo");
 				} else {
 					if(renda > (salarioMinimo * 5)) {
-						System.out.println("Boas práticas para poupar > 5 salario Mínimo");
+						//"Boas praticas para poupar/ padrão de vida alto\r\n"
+						// + "\r\n"
+						System.out.println(
+								"Baseado na sua renda acreditamos que a melhor forma de te ajudar a ter aquele dinheirinho no bolso é estabilizar sua \n"
+								+ "renda de forma saudável.\r\n"
+								+ "Aqui vai uma dica: Leve em conta um limite de 50% de gastos fixos no mês e você vai conseguir estabilizar suas dividas.\r\n"
+								+ "Vamos falar dos custos fixos, em casos que os custos fixos são maiores que uma renda generosa, onde talvez o custo de vida \n"
+								+ "seja muito alto é sempre bom considerar os valores pagos mensalmente, como aluguel, contas de água, luz e internet, \n"
+								+ "gasolina se ouver veículos e serviços de assinatura mensal.\r\n"
+								+ "Coloque no papel todos esses gastos e compare seus valores com novas oportunidades como uma casa com um aluguel \n"
+								+ "mais barato e se você utiliza todos esses serviços por assinatura.");
 					} else {
 						System.out.println("Boas práticas para poupar gastos > 60%. Renda Entre 1.5 Salário Min e 5 Salário Min");
 					}
