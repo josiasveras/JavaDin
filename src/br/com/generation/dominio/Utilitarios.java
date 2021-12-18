@@ -5,11 +5,13 @@ public class Utilitarios {
 	double reservaTotal;
 	double tempoReservaTotal;
 	
+	// Método para calcular total da reserva
 	public double calculaReservaTotal(double gastosFixos, int TotalMesesReserva) {
 		reservaTotal = gastosFixos * TotalMesesReserva;
 		return reservaTotal;
 	}
 	
+	// Método para calcular tempo para alcançar reserva  total
 	public double calculaTempoReservaTotal(double poupancaMensal) {
 		//Taxa de juros SELIC
 		double taxaDeJuros = 0.0915;
@@ -25,6 +27,7 @@ public class Utilitarios {
 		return tempoReservaTotal;
 	}
 	
+	// Método para calcular tempo necessário para reserva total
 	public void calculaTempo() {
 			
 			double ano = ((tempoReservaTotal * 30) / 360);

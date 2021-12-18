@@ -1,5 +1,6 @@
 package br.com.generation.aplicacao;
 
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,6 +11,14 @@ import br.com.generation.ui.UI;
 public class Programa {
 
 	public static void main(String[] args) {
+		
+		int idade = 0;
+		double renda = 0;
+		double gastosFixos = 0;
+		
+		boolean erroInt = true;
+		boolean erroRenda = true;
+		boolean errogastosFixos = true;
 		
 		// Instanciando as classes UI e Utilitarios
 		UI ui = new UI();
@@ -28,21 +37,64 @@ public class Programa {
 		System.out.print("Digite seu nome: ");
 		String nome = sc.nextLine();
 		
-		System.out.print("Digite sua idade: ");
-		int idade = sc.nextInt();
+		/*System.out.print("Digite sua idade: ");
+		int idade = sc.nextInt();*/
 		
-		System.out.print("Digite a sua renda total: ");
+		// Erro int
+		do{
+			try{
+				System.out.print("Digite sua idade: ");
+				idade = sc.nextInt();
+				erroInt = false;
+
+			}catch (InputMismatchException erro1) {
+				System.err.println("Informe apenas números inteiros");
+				sc.nextLine(); //descarta a entrada errada do usuário
+			}
+		}while(erroInt);
+		
+		/*System.out.print("Digite a sua renda total: ");
 		double renda = sc.nextDouble();
 		
 		System.out.println("Considere: água, luz, telefone/internet, aluguel/financiamento, alimentação");
 		System.out.print("Informe o total de seus gastos fixos mensais: ");
-		double gastosFixos = sc.nextDouble();
+		double gastosFixos = sc.nextDouble();*/
+		
+		// Erro renda
+		do{
+			try{
+				System.out.print("Digite a sua renda total: ");
+				renda = sc.nextDouble();
+				erroRenda = false;
+
+			}catch (InputMismatchException erro2) {
+				System.err.println("Informe apenas números!");
+				sc.nextLine(); //descarta a entrada errada do usuário
+				//sc.nextDouble(); //descarta a entrada errada do usuário
+			}
+		}while(erroRenda);
+		
+		// Erro gastos fixos
+		do{
+			try{
+				System.out.println("Considere: água, luz, telefone/internet, aluguel/financiamento, alimentação");
+				System.out.print("Informe o total de seus gastos fixos mensais: ");
+				gastosFixos = sc.nextDouble();
+				errogastosFixos = false;
+
+			}catch (InputMismatchException erro3) {
+				System.err.println("Informe apenas números!");
+				sc.nextLine(); //descarta a entrada errada do usuário
+				//sc.nextDouble(); //descarta a entrada errada do usuário
+			}
+		}while(errogastosFixos);
+		
 		System.out.println();
 		
 		// Instanciando a classe Pessoa
 		Pessoa pessoa = new Pessoa(nome, idade, renda, gastosFixos);
 		
-		// Calculo da porcentagem de gastos pela renda
+		// Cálculo da porcentagem de gastos pela renda
 		double porcenGastos = gastosFixos / renda;
 		
 		// Verificando se o usuário está apto a começar a poupar ou precisa organizar sua vida financeira antes
@@ -60,6 +112,7 @@ public class Programa {
 				
 			} while (TotalMesesReserva != 6 && TotalMesesReserva != 12 && TotalMesesReserva != 18);
 			
+			// Mostrando os dados do usuário
 			System.out.println("");
 			System.out.println("Nome: " + pessoa.getNome());
 			System.out.println("Idade: " + pessoa.getIdade() + " anos");
