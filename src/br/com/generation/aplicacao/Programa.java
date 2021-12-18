@@ -98,7 +98,9 @@ public class Programa {
 						
 					} else {
 						
-						System.out.println("Boas práticas para poupar gastos > 60%. Renda Entre 1.5 Salário Min e 5 Salário Min");
+						//System.out.println("Boas práticas para poupar gastos > 60%. Renda Entre 1.5 Salário Min e 5 Salário Min");
+						ui.dicaRendaMenorCincoSalMin();
+						
 					}
 				}
 			}

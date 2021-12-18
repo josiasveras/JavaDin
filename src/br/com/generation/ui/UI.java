@@ -29,4 +29,24 @@ public class UI {
 				+ "serviços por assinatura.\r\n"
 		);
 	}
+	
+	public void dicaRendaMenorCincoSalMin() {
+		System.out.println(
+				"Baseado na sua renda acreditamos que o melhor jeito de te \r\n"
+				+ "ajudar a ter aquele dinheirinho no fim do mês é conseguir \r\n"
+				+ "complementar sua renda.\r\n"
+				+ "\r\n"
+				+ "Aqui vai uma frase para mudar seu mindset: \r\n"
+				+ "\"O que não é usado é dinheiro parado, o que vai para o \r\n"
+				+ "lixo é dinheiro no lixo.\" \r\n"
+				+ "Se você tem roupas e objetos encostados é dinheiro que está\r\n"
+				+ "parado e podia estar circulando.\r\n"
+				+ "\r\n"
+				+ "Alimentos que você compra e joga no lixo também é desperdício, \r\n"
+				+ "por mais simples que isso seja quando jogamos no papel,\r\n"
+				+ "tudo o que não foi usado nesse mês, é dinheiro suficiente para sair \r\n"
+				+ "e ver um filme ou fazer uma social com os amigos em casa.\r\n"
+				+ ""
+		);
+	}
 }
