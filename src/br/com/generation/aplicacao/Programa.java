@@ -35,6 +35,12 @@ public class Programa {
 		// Instanciando a classe Scanner para permitir entrada de dados a partir da digitação do usuário
 		Scanner sc = new Scanner(System.in);
 		
+		// Mostrando o logo JavaDin
+		ui.logoJavaDin();
+		
+		System.out.println();
+		System.out.println();
+		
 		// Coletando dados do usuário
 		System.out.print("Digite seu nome: ");
 		String nome = sc.nextLine();

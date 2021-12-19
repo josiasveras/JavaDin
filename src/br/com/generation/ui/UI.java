@@ -6,6 +6,15 @@ public class UI {
 		
 	}
 	
+	public void logoJavaDin() {
+		
+		System.out.println("    $$$$$$  $$$$$$   $$  $$   $$$$$$   $$$$     $$   $$$   $$ ");
+		System.out.println("      $$    $$  $$   $$  $$   $$  $$   $$  $$   $$   $$ $  $$ ");
+		System.out.println("      $$    $$$$$$   $$  $$   $$$$$$   $$  $$   $$   $$  $ $$ ");
+		System.out.println("    $$$$    $$  $$    $$$     $$  $$   $$$$     $$   $$   $$$ ");
+		
+	}
+	
 	public void dicaRendaMaiorCincoSalMinEMaior60PC() {
 		System.out.println(
 				"No momento seus gastos fixos mensais ultrapassam \r\n"
