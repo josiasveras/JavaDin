@@ -39,6 +39,16 @@ public class Programa {
 		System.out.print("Digite seu nome: ");
 		String nome = sc.nextLine();
 		
+		if(nome .matches("^[a-zA-Z]*$")){
+	        
+	    } else {
+	    	do {
+	    		System.err.println("Informe apenas letras!");
+	    		System.out.print("Digite seu nome: ");
+	    		nome = sc.nextLine();
+	    	} while (!nome .matches("^[a-zA-Z]*$"));
+	    }
+		
 		/*System.out.print("Digite sua idade: ");
 		int idade = sc.nextInt();*/
 		
