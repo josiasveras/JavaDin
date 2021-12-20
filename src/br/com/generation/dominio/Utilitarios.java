@@ -56,7 +56,7 @@ public class Utilitarios {
 			}
 			
 			else { 
-					System.out.printf("O tempo para atingir está reserva será de %.0f meses", tempoReservaTotal);
+					System.out.printf("O tempo para atingir a reserva será de %.0f meses", tempoReservaTotal);
 				
 			}
 	}

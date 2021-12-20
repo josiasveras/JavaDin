@@ -11,7 +11,7 @@ public class UI {
 		System.out.println("    $$$$$$  $$$$$$   $$  $$   $$$$$$   $$$$     $$   $$$   $$ ");
 		System.out.println("      $$    $$  $$   $$  $$   $$  $$   $$  $$   $$   $$ $  $$ ");
 		System.out.println("      $$    $$$$$$   $$  $$   $$$$$$   $$  $$   $$   $$  $ $$ ");
-		System.out.println("    $$$$    $$  $$    $$$     $$  $$   $$$$     $$   $$   $$$ ");
+		System.out.println("    $$$$    $$  $$     $$     $$  $$   $$$$     $$   $$   $$$ ");
 		
 	}
 	
