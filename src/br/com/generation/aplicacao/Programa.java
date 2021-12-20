@@ -45,14 +45,14 @@ public class Programa {
 		System.out.print("Digite seu nome: ");
 		String nome = sc.nextLine();
 		
-		if(nome .matches("^[a-zA-Z-áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]*$")){
+		if(nome .matches("^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]*$")){
 	        
 	    } else {
 	    	do {
 	    		System.err.println("Informe apenas letras!");
 	    		System.out.print("Digite seu nome: ");
 	    		nome = sc.nextLine();
-	    	} while (!nome .matches("^[a-zA-Z-áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]*$")); ///^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/ ----- ^[a-zA-Z]*$
+	    	} while (!nome .matches("^[a-zA-Z-áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]*$"));
 	    }
 		
 		/*System.out.print("Digite sua idade: ");
